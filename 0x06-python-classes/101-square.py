@@ -73,7 +73,7 @@ class Square:
         output = ""
 
         if self.size == 0:
-            output += "\n"
+            return output
         else:
             for i in range(self.position[1]):
                 output += "\n"
@@ -82,4 +82,4 @@ class Square:
                 output += "#" * self.size
                 if i != (self.size - 1):
                     output += "\n"
-        return output
+            return output
