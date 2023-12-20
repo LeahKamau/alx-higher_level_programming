@@ -12,8 +12,8 @@ class Square:
             size (int): size of the square
             position (tuple)
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Method that returns the current square area"""
@@ -22,15 +22,15 @@ class Square:
     def my_print(self):
         """Method that prints in stdout the square
         with the character #"""
-        if not self.__size:
+        if not self.size:
             print()
         else:
-            for i in range(self.__position[1]):
+            for i in range(self.position[1]):
                 print()
 
-            for i in range(self.__size):
-                print(" " * self.__position[0], end="")
-                print("#" * self.__size)
+            for i in range(self.size):
+                print(" " * self.position[0], end="")
+                print("#" * self.size)
 
     @property
     def size(self):
