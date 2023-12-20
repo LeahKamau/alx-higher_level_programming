@@ -80,6 +80,6 @@ class Square:
             for i in range(self.size):
                 output += " " * self.position[0]
                 output += "#" * self.size
-                if i != self.size - 1:
+                if i != (self.size - 1):
                     output += "\n"
         return output
