@@ -1,0 +1,69 @@
+The ``1-my_list`` module
+========================
+
+Using ``MyList``
+----------------
+
+Importing function from module:
+	>>> MyList = __import__('1-my_list').MyList
+
+List of positive integers:
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+
+List of positive and negative integers:
+	>>> my_list = MyList()
+	>>> my_list.append(67)
+	>>> my_list.append(31)
+	>>> my_list.append(-2)
+	>>> my_list.append(10)
+	>>> my_list.append(0)
+	>>> print(my_list)
+	[67, 31, -2, 10, 0]
+	>>> my_list.print_sorted()
+	[-2, 0, 10, 31, 67]
+	>>> print(my_list)
+        [67, 31, -2, 10, 0]
+
+List with repeated integers
+	>>> my_list = MyList()
+        >>> my_list.append(10)
+        >>> my_list.append(3)
+        >>> my_list.append(10)
+        >>> my_list.append(3)
+        >>> my_list.append(3)
+	>>> print(my_list)
+        [10, 3, 10, 3, 3]
+        >>> my_list.print_sorted()
+        [3, 3, 3, 10, 10]
+        >>> print(my_list)
+	[10, 3, 10, 3, 3]
+
+Empty list
+	>>> my_list = MyList()
+	>>> my_list.print_sorted()
+	[]
+
+Type of instance
+	>>> my_list = MyList()
+	>>> type(my_list) == MyList
+	True
+
+MyList is a subclass of list
+	>>> my_list = MyList()
+	>>> issubclass(MyList, list)
+	True
+
+	>>> my_list.print_sorted([10, 12, 15])
+	Traceback (most recent call last):
+	TypeError: print_sorted() takes 1 positional argument but 2 were given
