@@ -4,7 +4,7 @@ import json
 
 
 def from_json_string(my_str):
-    """function that returns an object (Python data structure) represented by a JSON string
+    """function that returns an object represented by a JSON string
 
     Args:
         my_str: json string to object"""
