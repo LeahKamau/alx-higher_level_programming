@@ -36,8 +36,8 @@ class Rectangle(Base):
         self.__height = value
 
     @property
-    """ access to x """
     def x(self):
+        """ access to x """
         return self.__x
 
     @x.setter
